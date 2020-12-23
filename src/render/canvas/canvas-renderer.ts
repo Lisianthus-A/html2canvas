@@ -777,7 +777,7 @@ export class CanvasRenderer {
         this.ctx.strokeStyle = asString(color);
         const dash = data.space;
         this.ctx.lineDashOffset = 1.2 * dash;
-        this.ctx.setLineDash([dash * 2, dash]);
+        this.ctx.setLineDash([dash * 5, dash * 3]);
         paths.forEach((point, index) => {
             const start: Vector = isBezierCurve(point) ? point.start : point;
             if (index === 0) {
